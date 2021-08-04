@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvSettings"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="44dp"
+        android:padding="8dp"
+        android:text="@string/settings"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swLanguage"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:padding="8dp"
+        android:text="@string/language_switch"
+        app:layout_constraintEnd_toEndOf="@+id/tvLanguage"
+        app:layout_constraintStart_toStartOf="@+id/tvLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/tvLanguage" />
+
+    <EditText
+        android:id="@+id/etNick"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:hint="@string/nick"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/swLanguage"
+        app:layout_constraintStart_toStartOf="@+id/swLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/swLanguage" />
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:padding="8dp"
+        android:text="@string/language"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSettings"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/tvSettings"
+        app:layout_constraintTop_toBottomOf="@+id/tvSettings" />
+
+    <TextView
+        android:id="@+id/tvGraphics"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/graphics"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/etNick"
+        app:layout_constraintStart_toStartOf="@+id/etNick"
+        app:layout_constraintTop_toBottomOf="@+id/etNick" />
+
+    <Switch
+        android:id="@+id/swGraphics"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="8dp"
+        android:text="@string/graphics_switch"
+        app:layout_constraintEnd_toEndOf="@+id/tvGraphics"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/tvGraphics"
+        app:layout_constraintTop_toBottomOf="@+id/tvGraphics" />
+
+    <TextView
+        android:id="@+id/tvAutosave"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/autosave"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/swGraphics"
+        app:layout_constraintStart_toStartOf="@+id/swGraphics"
+        app:layout_constraintTop_toBottomOf="@+id/swGraphics" />
+
+    <Switch
+        android:id="@+id/swAutosave"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="@string/autosave_switch"
+        app:layout_constraintEnd_toEndOf="@+id/tvAutosave"
+        app:layout_constraintStart_toStartOf="@+id/tvAutosave"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutosave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
